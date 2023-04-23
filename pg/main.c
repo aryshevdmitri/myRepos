@@ -49,11 +49,10 @@ int main(int argc, char **argv)
 
 	switch(callnr)
 	{
-	 case 1: break;
-	 case 2: m.m_m1.m1i2=pgmem[m.m_m1.m1i1]; m.m_type = 2; break;
+	 case PG_WRITE: pgmem[m.m_m1.m1i1]=m.m_m1.m1i2; break;
+	 case PG_READ: m.m_m1.m1i2=pgmem[m.m_m1.m1i1]; m.m_type = 2; break;
 	 default: m.m_type = 3; break;
 	}
-
 
       /* Finally send reply message, unless disabled. */
           

@@ -1,2 +1,2 @@
 # myRepos
-uni project
+first git uni project
